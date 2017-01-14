@@ -10,11 +10,11 @@ namespace JARVIS
     {
         //login
         public static string password = "00101010";
-        public static string guess = "0";
+        public static string guess;
         public static string masterPasswordAlpha = "masterPassword";
         public static string username1 = "admin";
         public static string username2 = "test";
-        public static string username = "0";
+        public static string username;
 
         //commands
         public static string answer;
@@ -81,5 +81,8 @@ namespace JARVIS
         public static string titel4 = "Music: not so very epic music";
         public static string titel5 = "Music: BEEP BOOB";
         public static string titel6 = "Music: DON'T RUN THIS";
+
+        //Help
+        public static string helpText = "\nList of implemented commands\nExit\t\tLogout\t\tFind a poem\t\tMusic\t\tTell a joke\n";
     }
 }

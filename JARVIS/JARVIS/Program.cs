@@ -13,55 +13,59 @@ namespace JARVIS
         static void Main(string[] args)
         {
             Console.Title = "";
-        /*
-        Thread.Sleep(1000); //Boot start
-        Console.WriteLine("\n\tInitiating system check");
-        Thread.Sleep(500);
-        Console.WriteLine("\n\t. . .");
-        Thread.Sleep(500);
-        Console.WriteLine("\n\t. . .");
-        Thread.Sleep(500);
-        Console.WriteLine("\n\t. . .");
-        Thread.Sleep(1000);
-        Console.WriteLine("\n\tSystem check passed\n\n\tJ.A.R.V.I.S. is starting");
-        Thread.Sleep(2000);
-        Console.Clear();
-        Thread.Sleep(500);
-        Console.WriteLine("Booting ... OK");
-        Thread.Sleep(500);
-        Console.WriteLine("Resuming at 0x9000 ... OK");
-        Thread.Sleep(500);
-        Console.WriteLine("Loading kernel ... OK");
-        Thread.Sleep(500);
-        Console.WriteLine("Installing clock ISR ... OK");
-        Thread.Sleep(500);
-        Console.WriteLine("Installing block curser ... OK");
-        Thread.Sleep(500);
-        Console.WriteLine("SDE loading ... OK");
-        Thread.Sleep(1000);
-        Console.WriteLine("\nSDE test Operating System\n(C) 2020 Amit Singh. All Rights Reserved.");
-        Thread.Sleep(1000);
-        Console.WriteLine("\nSDE# ?");
-        Thread.Sleep(1000);
-        Console.WriteLine("\nEnter N (0 < N <= 9) as number of disks.");
-        Thread.Sleep(500);
-        Console.WriteLine("SDE test Operating System");
-        Thread.Sleep(500);
-        Console.WriteLine("(C) 2018 Amit Singh. AllRights Reserved.");
-        Thread.Sleep(1000);
-        Console.WriteLine("\nNot a spy system# 2");
-        Thread.Sleep(500);
-        Console.WriteLine("move 1 --> 2");
-        Thread.Sleep(500);
-        Console.WriteLine("move 1 --> 3");
-        Thread.Sleep(500);
-        Console.WriteLine("move 2 --> 3");
-        Thread.Sleep(500);
-        Console.WriteLine("0003 moves total");
-        Thread.Sleep(1000);
-        Console.WriteLine("SDE# d-_-b");
-        Thread.Sleep(3000);
-        */
+            /*
+            Thread.Sleep(1000); //Boot start
+            Console.WriteLine("\n\tInitiating system check");
+            Thread.Sleep(500);
+            Console.WriteLine("\n\t. . .");
+            Thread.Sleep(500);
+            Console.WriteLine("\n\t. . .");
+            Thread.Sleep(500);
+            Console.WriteLine("\n\t. . .");
+            Thread.Sleep(1000);
+            Console.WriteLine("\n\tSystem check passed\n\n\tJ.A.R.V.I.S. is starting");
+            Thread.Sleep(2000);
+            Console.Clear();
+            Thread.Sleep(500);
+            Console.WriteLine("Booting ... OK");
+            Thread.Sleep(500);
+            Console.WriteLine("Resuming at 0x9000 ... OK");
+            Thread.Sleep(500);
+            Console.WriteLine("Loading kernel ... OK");
+            Thread.Sleep(500);
+            Console.WriteLine("Installing clock ISR ... OK");
+            Thread.Sleep(500);
+            Console.WriteLine("Installing block curser ... OK");
+            Thread.Sleep(500);
+            Console.WriteLine("SDE loading ... OK");
+            Thread.Sleep(1000);
+            Console.WriteLine("\nSDE test Operating System\n(C) 2020 Amit Singh. All Rights Reserved.");
+            Thread.Sleep(1000);
+            Console.WriteLine("\nSDE# ?");
+            Thread.Sleep(1000);
+            Console.WriteLine("\nEnter N (0 < N <= 9) as number of disks.");
+            Thread.Sleep(500);
+            Console.WriteLine("SDE test Operating System");
+            Thread.Sleep(500);
+            Console.WriteLine("(C) 2018 Amit Singh. AllRights Reserved.");
+            Thread.Sleep(1000);
+            Console.WriteLine("\nNot a spy system# 2");
+            Thread.Sleep(500);
+            Console.WriteLine("move 1 --> 2");
+            Thread.Sleep(500);
+            Console.WriteLine("move 1 --> 3");
+            Thread.Sleep(500);
+            Console.WriteLine("move 2 --> 3");
+            Thread.Sleep(500);
+            Console.WriteLine("0003 moves total");
+            Thread.Sleep(1000);
+            Console.WriteLine("SDE# d-_-b");
+            Thread.Sleep(3000);
+            */
+            Login();
+        }
+        public static void Login()
+        {
         login:
             Console.Clear();
             while ((Values.password) != (Values.guess) || (Values.masterPasswordAlpha) != (Values.guess))
@@ -83,7 +87,7 @@ namespace JARVIS
                     Console.Clear();
                     break;
                 }
-                else if ((Values.guess) == (Values.username1) && (Values.username) == (Values.username1))
+                else if ((Values.guess) == (Values.username1) && (Values.username) == (Values.username1)) //Cheking if admin/admin used
                 {
                     Thread.Sleep(100);
                     Console.Clear();
@@ -93,7 +97,7 @@ namespace JARVIS
                     Thread.Sleep(7000);
                     Console.Clear();
                 }
-                else
+                else //Blinking screen if wrong answer
                 {
                     Thread.Sleep(100);
                     Console.BackgroundColor = ConsoleColor.Red;
@@ -124,7 +128,7 @@ namespace JARVIS
                     Console.Clear();
                 }
             }
-            Commands.HelpVoid();
+            Commands.DoingStuff();
             goto login;
             //Frederik har lavet ~10 linjer kode, så derfor tror han han er noget! (skide amatør)
             //Og jeg har lavet resten, så ER jeg noget!

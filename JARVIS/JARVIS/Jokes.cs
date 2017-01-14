@@ -66,7 +66,7 @@ namespace JARVIS
                     (Values.randomJokeInt) = 0;
                 }
             }
-            Commands.helpVoid();
+            Commands.DoingStuff();
         }
     }
 }
