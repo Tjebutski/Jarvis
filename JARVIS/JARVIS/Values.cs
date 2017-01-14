@@ -73,5 +73,13 @@ namespace JARVIS
         public static string TellPoem19 = "there's no way i'm planning";
         public static string TellPoem20 = "to change, and";
         public static string TellPoem21 = "it's worth it to me";
+
+        //Music
+        public static string titel1 = "Music: now with more beep!";
+        public static string titel2 = "Music: a drunk dev production";
+        public static string titel3 = "Music: Now with more things to entertain you!";
+        public static string titel4 = "Music: not so very epic music";
+        public static string titel5 = "Music: BEEP BOOB";
+        public static string titel6 = "Music: DON'T RUN THIS";
     }
 }

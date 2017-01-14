@@ -124,7 +124,7 @@ namespace JARVIS
                     Console.Clear();
                 }
             }
-            Commands.helpVoid();
+            Commands.HelpVoid();
             goto login;
             //Frederik har lavet ~10 linjer kode, så derfor tror han han er noget! (skide amatør)
             //Og jeg har lavet resten, så ER jeg noget!

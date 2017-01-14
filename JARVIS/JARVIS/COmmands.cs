@@ -9,7 +9,7 @@ namespace JARVIS
 {
     class Commands
     {
-        public static void helpVoid()
+        public static void HelpVoid()
         {
             Console.Title = "J.A.R.V.I.S."; //JARVIS running
         JARVIS: //goto point if logout
@@ -88,7 +88,8 @@ namespace JARVIS
             }
             if ((Values.answer) == (Values.music) || (Values.answer) == (Values.music2))                //music
             {
-                System.Diagnostics.Process.Start(@System.AppDomain.CurrentDomain.BaseDirectory + "bin/musik.exe");
+                Console.Clear();
+                Music.Play();
                 goto JARVIS;
             }
             if ((Values.answer) == (Values.joke) || (Values.answer) == (Values.joke1))                  //joke
@@ -97,7 +98,7 @@ namespace JARVIS
             }
             if ((Values.login) == true)
             {
-                Admin.superUser();
+                Admin.SuperUser();
             }
             else
             {

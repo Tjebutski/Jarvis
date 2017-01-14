@@ -10,7 +10,7 @@ namespace JARVIS
 {
     class Admin
     {
-        public static void superUser()
+        public static void SuperUser()
         {
         JARVIS1:
             Console.Write("{0}@HackBookPro~$: ", (Values.username));
