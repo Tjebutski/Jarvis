@@ -45,20 +45,13 @@ namespace JARVIS
             }
             Thread.Sleep(1000);
         start:
-            Console.WriteLine("To choose a command, please write the coresponding number");
-            Console.WriteLine("\n\t1. Mario theme");
-            Console.WriteLine("\t2. Imperial March");
-            Console.WriteLine("\t3. Tetris theme");
-            Console.WriteLine("\t4. Random stuff");
-            Console.WriteLine("\t5. TECNO");
-            Console.WriteLine("\n\tEXIT");
+            Console.WriteLine("{0}{1}{2}{3}{4}{5}{6}", Values.text1, Values.text2, Values.text3, Values.text4, Values.text5, Values.text6, Values.text7);
 
-            int Mario_theme = 1;
-            int Imperial_March = 2;
-            int Tetris = 3;
-            int stuff = 4;
-            int tecno = 5;
-            int ninja1 = 0;
+            string Mario_theme = "1";
+            string Imperial_March = "2";
+            string Tetris = "3";
+            string stuff = "4";
+            string tecno = "5";
             string ninja;
             string exit = "Exit";
             string exit1 = "exit";
@@ -73,8 +66,7 @@ namespace JARVIS
             //int.TryParse(Console.ReadLine(), out ninja);
             else
             {
-                ninja1 = Convert.ToInt32(ninja);
-                if (ninja1 == Mario_theme)
+                if (ninja == Mario_theme)
                 {
                     Console.Clear();
                     Console.WriteLine("\n\t NOW PLAYING the Mario theme");
@@ -258,7 +250,7 @@ namespace JARVIS
                     Console.Clear();
                     goto start;
                 }
-                else if (ninja1 == Imperial_March)
+                else if (ninja == Imperial_March)
                 {
                     Console.Clear();
                     Console.WriteLine("\n\t NOW PLAYING Imperial March");
@@ -307,7 +299,7 @@ namespace JARVIS
                     Console.Clear();
                     goto start;
                 }
-                else if (ninja1 == Tetris)
+                else if (ninja == Tetris)
                 {
                     Console.Clear();
                     Console.WriteLine("\n\t NOW PLAYING Tetris theme");
@@ -429,7 +421,7 @@ namespace JARVIS
                     Console.Clear();
                     goto start;
                 }
-                else if (ninja1 == stuff)
+                else if (ninja == stuff)
                 {
                     Console.Clear();
                     Console.WriteLine("\n\t NOW PLAYING something random");
@@ -522,7 +514,7 @@ namespace JARVIS
                     Console.Clear();
                     goto start;
                 }
-                else if (ninja1 == tecno)
+                else if (ninja == tecno)
                 {
 
                     while (true)
@@ -541,9 +533,11 @@ namespace JARVIS
                 {
                     Console.Clear();
                     Console.WriteLine("I'm sorry Dave, but I can't allow you to do that");
+                    Thread.Sleep(1500);
+                    Console.Clear();
+                    goto start;
                 }
             }
-            Console.ReadLine();
         }
     }
 }

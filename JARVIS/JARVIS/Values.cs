@@ -82,6 +82,15 @@ namespace JARVIS
         public static string titel5 = "Music: BEEP BOOB";
         public static string titel6 = "Music: DON'T RUN THIS";
 
+        public static string text1 = "To choose a command, please write the coresponding number";
+        public static string text2 = "\n\n\t1. Mario theme";
+        public static string text3 = "\n\t2. Imperial March";
+        public static string text4 = "\n\t3. Tetris theme";
+        public static string text5 = "\n\t4. Random stuff";
+        public static string text6 = "\n\t5. TECNO";
+        public static string text7 = "\n\n\tEXIT";
+
+
         //Help
         public static string helpText = "\nList of implemented commands\nExit\t\tLogout\t\tFind a poem\t\tMusic\t\tTell a joke\n";
     }
