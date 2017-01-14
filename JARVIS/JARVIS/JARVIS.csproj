@@ -46,6 +46,7 @@
     <Compile Include="Commands.cs" />
     <Compile Include="Jokes.cs" />
     <Compile Include="Music.cs" />
+    <Compile Include="MusicTitle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Values.cs" />

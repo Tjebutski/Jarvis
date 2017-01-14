@@ -7,42 +7,7 @@ namespace JARVIS
     {
         public static void Play()
         {
-            Random titelName = new Random();
-            int somethingSomethingTitelName = titelName.Next(1, 7);
-            Console.ForegroundColor = ConsoleColor.Green;
-            while (somethingSomethingTitelName != 0)
-            {
-                if (somethingSomethingTitelName == 1)
-                {
-                    Console.Title = Values.titel1;
-                    somethingSomethingTitelName = 0;
-                }
-                else if (somethingSomethingTitelName == 2)
-                {
-                    Console.Title = Values.titel2;
-                    somethingSomethingTitelName = 0;
-                }
-                else if (somethingSomethingTitelName == 3)
-                {
-                    Console.Title = Values.titel3;
-                    somethingSomethingTitelName = 0;
-                }
-                else if (somethingSomethingTitelName == 4)
-                {
-                    Console.Title = Values.titel4;
-                    somethingSomethingTitelName = 0;
-                }
-                else if (somethingSomethingTitelName == 5)
-                {
-                    Console.Title = Values.titel5;
-                    somethingSomethingTitelName = 0;
-                }
-                else if (somethingSomethingTitelName == 6)
-                {
-                    Console.Title = Values.titel6;
-                    somethingSomethingTitelName = 0;
-                }
-            }
+            MusicTitle.Title();
             Thread.Sleep(1000);
         start:
             Console.WriteLine("{0}{1}{2}{3}{4}{5}{6}", Values.text1, Values.text2, Values.text3, Values.text4, Values.text5, Values.text6, Values.text7);
@@ -61,7 +26,7 @@ namespace JARVIS
             if (ninja == exit || ninja == exit1)
             {
                 Console.Clear();
-                return;
+                Commands.DoingStuff();
             }
             //int.TryParse(Console.ReadLine(), out ninja);
             else
@@ -516,7 +481,6 @@ namespace JARVIS
                 }
                 else if (ninja == tecno)
                 {
-
                     while (true)
                     {
                         Console.Clear();
