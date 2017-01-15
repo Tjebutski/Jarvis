@@ -66,7 +66,6 @@ namespace JARVIS
         }
         public static void Login()
         {
-        login:
             Console.Clear();
             while ((Values.password) != (Values.guess) || (Values.masterPasswordAlpha) != (Values.guess))
             {
@@ -129,7 +128,7 @@ namespace JARVIS
                 }
             }
             Commands.DoingStuff();
-            goto login;
+            Program.Login();
             //Frederik har lavet ~10 linjer kode, så derfor tror han han er noget! (skide amatør)
             //Og jeg har lavet resten, så ER jeg noget!
         }
