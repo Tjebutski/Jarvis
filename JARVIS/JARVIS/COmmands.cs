@@ -8,7 +8,6 @@ namespace JARVIS
         public static void DoingStuff()
         {
             Console.Title = "J.A.R.V.I.S."; //JARVIS running
-        JARVIS: //goto point if logout
             Console.Write("{0}@HackBookPro: ", (Values.username));
             (Values.answer) = Convert.ToString(Console.ReadLine());
             if ((Values.answer) == (Values.masterPassword))
@@ -18,7 +17,7 @@ namespace JARVIS
             if ((Values.answer) == (Values.help) || (Values.answer) == (Values.help2))                //help
             {
                 Console.WriteLine(Values.helpText);
-                goto JARVIS;
+                DoingStuff();
             }
             else if ((Values.answer) == (Values.logout) || (Values.answer) == (Values.logout2))            //logout
             {
@@ -79,13 +78,13 @@ namespace JARVIS
                     Values.TellPoem13, Values.TellPoem14, Values.TellPoem15,
                     Values.TellPoem16, Values.TellPoem17, Values.TellPoem18,
                     Values.TellPoem19, Values.TellPoem20, Values.TellPoem21);
-                goto JARVIS;
+                DoingStuff();
             }
             else if ((Values.answer) == (Values.music) || (Values.answer) == (Values.music2))                //music
             {
                 Console.Clear();
                 Music.Play();
-                goto JARVIS;
+                DoingStuff();
             }
             else if ((Values.answer) == (Values.joke) || (Values.answer) == (Values.joke1))                  //joke
             {
@@ -101,7 +100,7 @@ namespace JARVIS
                 Console.WriteLine("Unknow command");
                 Console.WriteLine("Try typing 'help' for a list of commands");
                 Console.WriteLine();
-                goto JARVIS;
+                DoingStuff();
             }
         }
 

@@ -9,7 +9,6 @@ namespace JARVIS
         {
             MusicTitle.Title();
             Thread.Sleep(1000);
-        start:
             Console.WriteLine("{0}{1}{2}{3}{4}{5}{6}", Values.text1, Values.text2, Values.text3, Values.text4, Values.text5, Values.text6, Values.text7);
 
             string Mario_theme = "1";
@@ -213,7 +212,7 @@ namespace JARVIS
                     Console.Beep(523, 125);
                     Thread.Sleep(625);
                     Console.Clear();
-                    goto start;
+                    Play();
                 }
                 else if (ninja == Imperial_March)
                 {
@@ -262,7 +261,7 @@ namespace JARVIS
                     Console.Beep(261, 125); Console.Beep(440, 1000);
                     Thread.Sleep(100);
                     Console.Clear();
-                    goto start;
+                    Play();
                 }
                 else if (ninja == Tetris)
                 {
@@ -384,7 +383,7 @@ namespace JARVIS
                     Console.Beep(880, 1000);
                     Console.Beep(838, 2000);
                     Console.Clear();
-                    goto start;
+                    Play();
                 }
                 else if (ninja == stuff)
                 {
@@ -477,7 +476,7 @@ namespace JARVIS
                     Thread.Sleep(eighth);
                     Console.Beep(F, note);
                     Console.Clear();
-                    goto start;
+                    Play();
                 }
                 else if (ninja == tecno)
                 {
@@ -499,7 +498,7 @@ namespace JARVIS
                     Console.WriteLine("I'm sorry Dave, but I can't allow you to do that");
                     Thread.Sleep(1500);
                     Console.Clear();
-                    goto start;
+                    Play();
                 }
             }
         }

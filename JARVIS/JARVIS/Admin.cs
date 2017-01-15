@@ -7,7 +7,6 @@ namespace JARVIS
     {
         public static void SuperUser()
         {
-        JARVIS1:
             Console.Write("{0}@HackBookPro~$: ", (Values.username));
 
             (Values.answer1) = Convert.ToString(Console.ReadLine());
@@ -15,7 +14,7 @@ namespace JARVIS
             if ((Values.help1) == (Values.answer1) || (Values.help2) == (Values.answer1)) //Help
             {
                 Console.WriteLine(Values.helpText);
-                goto JARVIS1;
+                SuperUser();
             }
             if ((Values.logout1) == (Values.answer1) || (Values.logout2) == (Values.answer1)) //Logout
             {
@@ -55,13 +54,13 @@ namespace JARVIS
                     Values.TellPoem13, Values.TellPoem14, Values.TellPoem15,
                     Values.TellPoem16, Values.TellPoem17, Values.TellPoem18,
                     Values.TellPoem19, Values.TellPoem20, Values.TellPoem21);
-                goto JARVIS1;
+                SuperUser();
             }
             if ((Values.answer1) == (Values.music1) || (Values.answer1) == (Values.music2)) //Music
             {
                 Console.Clear();
                 Music.Play();
-                goto JARVIS1;
+                SuperUser();
             }
             if ((Values.answer1) == (Values.exit1) || (Values.answer1) == (Values.exit2)) //Exit
             {
@@ -90,7 +89,7 @@ namespace JARVIS
                 Console.WriteLine("Incorrect command, please check the spelling and try again!");
                 Console.WriteLine("Try typing 'help' for more information");
                 Console.WriteLine();
-                goto JARVIS1;
+                SuperUser();
             }
         }
     }
