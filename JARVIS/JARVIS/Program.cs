@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Threading;
 
 
@@ -13,7 +9,7 @@ namespace JARVIS
         static void Main(string[] args)
         {
             Console.Title = "";
-            /*
+            
             Thread.Sleep(1000); //Boot start
             Console.WriteLine("\n\tInitiating system check");
             Thread.Sleep(500);
@@ -61,7 +57,7 @@ namespace JARVIS
             Thread.Sleep(1000);
             Console.WriteLine("SDE# d-_-b");
             Thread.Sleep(3000);
-            */
+            
             Login();
         }
         public static void Login()
@@ -129,8 +125,6 @@ namespace JARVIS
             }
             Commands.DoingStuff();
             Program.Login();
-            //Frederik har lavet ~10 linjer kode, så derfor tror han han er noget! (skide amatør)
-            //Og jeg har lavet resten, så ER jeg noget!
         }
     }
 }
